@@ -1,0 +1,11 @@
+javac SearchQuery.java 
+rmic SearchQuery 
+rmiregistry on console
+
+On console-1:
+javac SearchServer.java 
+java SearchServer
+
+On console-2:
+javac ClientRequest.java 
+java ClientRequest
