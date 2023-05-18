@@ -1,0 +1,7 @@
+After creating Hello.idl, run " idlj -fall Hello.idl "
+A new folder with 6 files will be created. In terminal go inside this new folder and run " javac *.java ". 
+Now come out of the folder and run the following 4 commands 
+javac *.java  
+ordb -ORBInitializePort 1080&
+ordb HelloServer -ORBInitializePort 1080 -ORBInitializeHost localhost&
+ordb HelloClient -ORBInitializePort 1080 -ORBInitializeHost localhost

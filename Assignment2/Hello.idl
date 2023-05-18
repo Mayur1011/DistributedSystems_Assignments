@@ -1,0 +1,6 @@
+module HelloApp{
+    interface Hello {
+        string getReverseString(in string str1);
+        oneway void shutdown();
+    };
+};
