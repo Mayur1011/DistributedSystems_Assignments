@@ -13,19 +13,19 @@ public class Bully {
 
     int totalProcess;
     Scanner inputObj = new Scanner(System.in);
-    Ring.Process[] pArr;
+    Process[] pArr;
 
     public void initializeProcesses() {
         System.out.print("Enter number of processes : ");
         totalProcess = inputObj.nextInt();
         System.out.println(totalProcess + " processes are running.");
-        pArr = new Ring.Process[totalProcess];
+        pArr = new Process[totalProcess];
         int i = 0;
         int processId = 0;
         System.out.println("Enter the process id(s) : ");
         while (i < pArr.length) {
             processId = inputObj.nextInt();
-            pArr[i] = new Ring.Process(processId);
+            pArr[i] = new Process(processId);
             i++;
         }
         for (i = 0; i < pArr.length; i++) {
