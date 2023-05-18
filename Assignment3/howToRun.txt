@@ -1,0 +1,2 @@
+mpicc -o additionProg additionProg.c
+mpirun -np <numberofprocesses> ./additionProg
