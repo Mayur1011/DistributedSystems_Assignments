@@ -1,7 +1,7 @@
 import java.util.*;
 
-class tokenRing {
-    public static void main(String[] args) throws Throwable {
+public class tokenRing {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the num of processes : ");
         int n = scan.nextInt();
