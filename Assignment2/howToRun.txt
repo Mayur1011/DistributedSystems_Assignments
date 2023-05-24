@@ -2,6 +2,6 @@ After creating Hello.idl, run " idlj -fall Hello.idl "
 A new folder with 6 files will be created. In terminal go inside this new folder and run " javac *.java ". 
 Now come out of the folder and run the following 4 commands 
 javac *.java  
-ordb -ORBInitialPort 1050&
+orbd -ORBInitialPort 1050&
 java HelloServer -ORBInitialPort 1050& -ORBInitialHost localhost&
 java HelloClient -ORBInitialPort 1050 -ORBInitialHost localhost
