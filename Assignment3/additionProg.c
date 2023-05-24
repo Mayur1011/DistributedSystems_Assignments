@@ -34,6 +34,7 @@ int main(int argc, char** argv) {
             printf("%d ", arr[i]);
         }
         printf("\n");
+        fflush(stdout);
     }
 
     // Broadcast the number of elements to all processes
